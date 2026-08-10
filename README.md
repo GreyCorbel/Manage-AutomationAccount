@@ -43,7 +43,6 @@ Unlike Azure DevOps, which uses Service Connections natively, GitHub Actions req
 You will need to configure the following secrets/variables:
 ```
 AZURE_CLIENT_ID        | Secret
-AZURE_CLIENT_SECRET    | Secret
 AZURE_TENANT_ID        | Secret
 AZURE_SUBSCRIPTION_ID  | Variable
 ```
@@ -89,7 +88,6 @@ jobs:
           projectDir: './Automation/Default'
           subscription: 'My-Azure-Subscription-Name'
           azureClientId: ${{ secrets.AZURE_CLIENT_ID }}
-          azureClientSecret: ${{ secrets.AZURE_CLIENT_SECRET }}
           azureTenantId: ${{ secrets.AZURE_TENANT_ID }}
           azureSubscriptionId: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
